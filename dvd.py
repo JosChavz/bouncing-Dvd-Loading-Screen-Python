@@ -3,12 +3,12 @@ from time import sleep
 from random import randint
 
 pygame.init()
-pygame.display.set_caption('AS Loading Screen')
+pygame.display.set_caption('DVD Loading Screen')
 
 xEdge, yEdge = 1000, 1000
 
 # screen = pygame.display.set_mode((xEdge,yEdge))
-logo = 'as.png'
+logo = 'logo.png'
 screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
 myimage = pygame.image.load(logo)
 imagerect = myimage.get_rect()
