@@ -5,11 +5,11 @@ from random import randint
 pygame.init()
 pygame.display.set_caption('DVD Loading Screen')
 
-xEdge, yEdge = 1000, 1000
+xEdge, yEdge = 800, 800
 
 # screen = pygame.display.set_mode((xEdge,yEdge))
 logo = 'logo.png'
-screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
+screen = pygame.display.set_mode((xEdge, yEdge))
 myimage = pygame.image.load(logo)
 imagerect = myimage.get_rect()
 
@@ -18,7 +18,7 @@ x = 100
 y = 100
 speedX = randint(1, 5)  # first randomed then get new random values
 speedY = randint(1, 5)
-sizeX, sizeY = 173, 104
+sizeX, sizeY = 200, 200
 
 
 def logic():
